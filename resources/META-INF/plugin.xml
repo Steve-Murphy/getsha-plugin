@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>com.steve.plugins.getsha</id>
+  <name>Plugin display name here</name>
+  <version>1.0</version>
+  <vendor url="http://plugins.jetbrains.com/space/index?lg=vikingsteve">Steve Murphy</vendor>
+
+  <description><![CDATA[
+        Get sha256 value for a given artifact from artifactory
+    ]]></description>
+
+  <change-notes><![CDATA[
+        1.0 - Initial version.<br>
+  ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="getsha-plugin.getsha" class="com.steve.plugins.getsha.GetShaAction" text="Get sha256"
+            description="Get sha256 for a given artifact from artifactory">
+      <add-to-group group-id="EditMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
