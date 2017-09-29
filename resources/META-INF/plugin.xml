@@ -28,7 +28,9 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="getsha-plugin.getsha" class="com.steve.plugins.getsha.GetShaAction" text="Get sha256"
+    <action id="getsha-plugin.getsha"
+            class="com.steve.plugins.getsha.GetShaAction"
+            text="Get sha256"
             description="Get sha256 for a given artifact from artifactory">
       <add-to-group group-id="EditMenu" anchor="last"/>
     </action>
