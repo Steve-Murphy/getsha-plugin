@@ -134,14 +134,8 @@ public class GetShaAction extends AnAction {
         con.setRequestMethod("GET");
         con.setInstanceFollowRedirects(true);
         con.setRequestProperty("Authorization", "Basic " + Base64.getEncoder().encodeToString(ARTIFACTORY_USER_PASS.getBytes()));
-//        con.setRequestProperty("Content-Type", "application/json");
-//        con.setRequestProperty("Content-length", String.valueOf(payload.length()));
         con.setDoOutput(true);
         con.setDoInput(true);
-
-//        DataOutputStream output = new DataOutputStream(con.getOutputStream());
-//        output.writeBytes(payload);
-//        output.close();
 
         int code = con.getResponseCode();
         if (code != 200) throw new Exception(code + ": " + con.getResponseMessage());

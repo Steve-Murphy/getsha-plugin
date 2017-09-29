@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.steve.plugins.getsha</id>
-  <name>Plugin display name here</name>
+  <name>Get Sha256 Plugin</name>
   <version>1.0</version>
   <vendor url="http://plugins.jetbrains.com/space/index?lg=vikingsteve">Steve Murphy</vendor>
 
